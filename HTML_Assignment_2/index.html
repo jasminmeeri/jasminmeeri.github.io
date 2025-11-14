@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Laurea University of Applied Sciences - Job Application</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        header, footer { background-color: lightblue; padding: 10px; }
+        nav a { margin: 0 10px; }
+        section { margin-top: 20px; }
+        .form-section { background-color: lightblue;  padding: 15px; border: 1px solid #ccc; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Laurea University of Applied Sciences</h1>
+    <nav>
+        <a href="#application">Application Form</a>
+        <a href="#quote">Quote</a>
+        <a href="#media">Laurea Media</a>
+    </nav>
+</header>
+
+<main>
+    <section id="application" class="form-section">
+        <article>
+        <h2>Student Job Application</h2>
+
+        <!-- Job application form starts here -->
+        <form action="/submit" method="POST" autocomplete="on">   
+        
+        <label>Full Name:
+            <input type="text" name="fullname" placeholder="Jane Student" required minlength="3" maxlength="50">
+        </label><br><br>
+
+        <label>Email:
+            <input type="text" name="email" placeholder="your.name@student.laurea.fi" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        </label><br><br>
+
+        <label>Password:
+            <input type="password" name="password" required>
+        </label><br><br>
+
+        <label>Years of Experience:
+            <input type="number" name="experience" min="0" max="10">
+        </label><br><br>
+
+        <label>Expected Salary Range:
+            <input type="range" name="salary" min="500" max="4000" step="100">
+        </label><br><br>
+
+        <label>Job Preference:</label><br>
+        <input type="checkbox" name="preference" value="remote"> Remote Work<br>
+        <input type="checkbox" name="preference" value="oncampus"> On Campus<br>
+        <input type="checkbox" name="preference" value="hybridwork"> Hybrid Work<br><br>
+
+        <label>Job Type:</label><br>
+        <input type="radio" name="jobtype" value="fulltime"> Full Time<br>
+        <input type="radio" name="jobtype" value="parttime"> Part Time<br><br>
+
+        <label>Job Positions:
+            <select name="jobposition">
+                <option value="uiuxdesigner">UI/UX Designer</option>
+                <option value="frontenddeveloper">Front-End Developer</option>
+                <option value="backenddeveloper">Back-End Developer</option>
+            </select>
+        </label><br><br>
+
+        <label>City preference:
+            <input list="cities" name="city">
+            <datalist id="cities">
+                <option value="Helsinki">
+                <option value="Espoo">
+                <option value="Tampere">
+                <option value="Turku">  
+            </datalist>
+        </label><br><br>
+
+        <label>Cover Letter:<br>
+            <textarea name="coverletter" rows="5" cols="40" placeholder="Why would you like to work with us?"></textarea>
+        </label><br><br>
+
+        <label>Referral Code (disabled):
+            <input type="text" value="REFERRALCODE123" disabled>
+        </label><br><br>
+
+        <label>Application ID (readonly):
+            <input type="text" value="LAU2025APP" readonly>
+        </label><br><br>
+
+        <input type="submit" value="Send" aria-label="Submit Job Application">
+        
+        </form>
+        <!-- Job application form ends here -->
+        </article>
+    </section><br>
+
+    <aside>
+    <h5>Here is a quote to inspire your day</h5>
+    </aside>
+
+        <blockquote id="quote">
+        "Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work" - Steve Jobs 
+    </blockquote>
+
+    <section id="media">
+        <article>
+            <h2>Laurea Media</h2>
+
+            <!-- Laurea Figure Image and caption -->
+            <figure>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2weLWMLaBDgz-TotpVyoZb1mzqYKv2cHgoQ&s"
+                     alt="Laurea Logo"
+                     width="200">
+                <figcaption>Official Laurea Logo</figcaption>
+            </figure><br>
+
+            <!-- Embed External Media -->
+        <embed src="https://www.laurea.fi/globalassets/laurea/documents/strategia-2030_eng-lowres.pdf" type="application/pdf" width="500" height="300">
+        </article>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Laurea University of Applied Sciences. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
