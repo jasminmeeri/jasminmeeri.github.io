@@ -1,0 +1,186 @@
+/* Resetting the defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Typography section */
+body {
+    font-family: 'Space Mono', monospace;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    background-repeat: repeat;
+    text-align: center;
+}
+
+main {
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+h1.title {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 700;
+    margin: 20px 0;
+    color: #222 !important;
+    /* override */
+
+}
+
+
+h2 {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    font-weight: bold;
+    word-spacing: 4px;
+    margin: 20px 0 10px 0;
+    color: black;
+}
+
+.intro {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.highlight.bold {
+    font-weight: 700;
+    color: rgb(0, 45, 4);
+    /* use of rgb */
+}
+
+/* Navigation bar */
+nav {
+    margin: 15px 0;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: darkblue;
+    /* use of named color */
+    margin: 0 15px;
+    font-weight: bold;
+    display: inline;
+    /* inline display */
+}
+
+nav a:hover {
+    color: #590303;
+    /* use of hex color */
+}
+
+nav a:visited {
+    color: rgba(35, 176, 101, 0.661);
+}
+
+nav a:active {
+    color: darkolivegreen;
+}
+
+/* Quote section */
+.quote {
+    padding: 15px;
+    font-style: italic;
+    text-align: center;
+    margin: 30px auto;
+    font-size: 18px;
+    color: #202020;
+    max-width: 600px;
+    border-radius: 6px;
+    opacity: 0.85;
+    background-color: hsl(210, 60%, 90%);
+    /* use of hsl color */
+}
+
+/* Gallery section */
+.gallery {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    min-width: 300px;
+    max-width: 1000px;
+    position: relative
+}
+
+.gallery figure {
+    display: inline-block;
+    margin: 10px;
+    border: 2px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery figcaption {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 6px;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Examples of Positioning */
+.artwork.static {
+    position: static;
+}
+
+.artwork.relative {
+    position: relative;
+    top: 10px;
+    right: 5px;
+}
+
+.artwork.absolute {
+    position: absolute;
+    top: 100px;
+    z-index: 2;
+}
+
+.artwork.sticky {
+    position: sticky;
+    top: 400px;
+    z-index: 1;
+}
+
+/*Float and clear example*/
+
+.float-text {
+    float: left;
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    background: rgba(200, 200, 200, 0.4);
+    border-radius: 6px;
+}
+
+.clear {
+    clear: both;
+
+}
+
+/* Footer section */
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 15px;
+    background: #eee;
+    border-top: 3px solid #ccc;
+}
+
+.fixed-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
